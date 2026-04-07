@@ -68,10 +68,10 @@ export default function Footer() {
           <div className="lg:col-span-2">
             <h4 className="text-[10px] font-black uppercase tracking-[0.3em] text-dark-green/30 mb-8">Offerings</h4>
             <ul className="space-y-4">
-              <li className="text-sm font-black text-dark-green/60 uppercase tracking-widest">Lawn Maintenance</li>
-              <li className="text-sm font-black text-dark-green/60 uppercase tracking-widest">Snow Removal</li>
-              <li className="text-sm font-black text-dark-green/60 uppercase tracking-widest">Landscape Install</li>
-              <li className="text-sm font-black text-dark-green/60 uppercase tracking-widest">Excavation</li>
+              <li><Link href="/services" className="text-sm font-black text-dark-green/60 hover:text-primary-green transition-colors uppercase tracking-widest block">Lawn Maintenance</Link></li>
+              <li><Link href="/services" className="text-sm font-black text-dark-green/60 hover:text-primary-green transition-colors uppercase tracking-widest block">Snow Removal</Link></li>
+              <li><Link href="/services" className="text-sm font-black text-dark-green/60 hover:text-primary-green transition-colors uppercase tracking-widest block">Landscape Install</Link></li>
+              <li><Link href="/services" className="text-sm font-black text-dark-green/60 hover:text-primary-green transition-colors uppercase tracking-widest block">Excavation</Link></li>
             </ul>
           </div>
 
