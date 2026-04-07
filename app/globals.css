@@ -1,26 +1,63 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #FAF9F6;
+  --foreground: #1B3518;
+  --primary-green: #345E37;
+  --dark-green: #1B3518;
+  --accent-green: #5D8233;
+  --cream: #FAF9F6;
+  --cream-darker: #EAE6D6;
+  --text-body: #2C3E2D;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-primary-green: var(--primary-green);
+  --color-dark-green: var(--dark-green);
+  --color-accent-green: var(--accent-green);
+  --color-cream: var(--cream);
+  --color-cream-darker: var(--cream-darker);
+  --color-text-body: var(--text-body);
+  
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-heading: var(--font-plus-jakarta);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #1B3518;
+    --foreground: #FAF9F6;
+    --text-body: #EAE6D6;
   }
 }
 
 body {
   background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  color: var(--text-body);
+  font-family: var(--font-plus-jakarta), var(--font-geist-sans), Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background-color: var(--primary-green);
+  color: var(--cream);
+}
+
+/* Hide Scrollbar */
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading), sans-serif;
+  letter-spacing: -0.02em;
 }
