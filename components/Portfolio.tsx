@@ -71,8 +71,8 @@ export default function Portfolio() {
                 />
                 
                 {/* Overlay Content */}
-                <div className="absolute inset-0 bg-gradient-to-t from-dark-green/95 via-dark-green/40 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500 flex flex-col justify-end p-10">
-                  <div className="transform translate-y-8 group-hover:translate-y-0 transition-all duration-500">
+                <div className="absolute inset-0 bg-gradient-to-t from-dark-green/95 via-dark-green/40 to-transparent opacity-100 md:opacity-0 group-hover:opacity-100 transition-all duration-500 flex flex-col justify-end p-10">
+                  <div className="transform translate-y-0 md:translate-y-8 group-hover:translate-y-0 transition-all duration-500">
                     <span className="inline-block px-4 py-1.5 rounded-full bg-accent-green text-white text-[10px] font-black uppercase tracking-widest mb-4 shadow-xl">
                       {project.category}
                     </span>
@@ -83,7 +83,7 @@ export default function Portfolio() {
                 </div>
                 
                 {/* Magnifying Glass Icon */}
-                <div className="absolute top-8 right-8 w-14 h-14 bg-white/20 backdrop-blur-xl rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-500 hover:bg-primary-green hover:scale-110 border border-white/20">
+                <div className="absolute top-8 right-8 w-14 h-14 bg-white/20 backdrop-blur-xl rounded-full flex items-center justify-center opacity-100 md:opacity-0 group-hover:opacity-100 transition-all duration-500 hover:bg-primary-green hover:scale-110 border border-white/20">
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="w-6 h-6 text-white">
                     <path strokeLinecap="round" strokeLinejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
                   </svg>
