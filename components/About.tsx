@@ -1,7 +1,12 @@
+"use client";
+
 import Image from "next/image";
+import { useState } from "react";
 import FadeIn from "./FadeIn";
 
 export default function About() {
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
+
   return (
     <section id="about" className="py-32 bg-cream relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -11,13 +16,23 @@ export default function About() {
             <div className="grid grid-cols-2 gap-4">
               <div className="space-y-4">
                 <FadeIn direction="right" delay={100}>
-                  <div className="relative h-80 rounded-[2rem] overflow-hidden shadow-2xl">
+                  <div 
+                    className="group relative h-80 rounded-[2rem] overflow-hidden shadow-2xl cursor-pointer border-2 border-transparent hover:border-primary-green transition-all duration-500"
+                    onClick={() => setSelectedImage("/IMG_7530.jpeg")}
+                  >
                     <Image
                       src="/IMG_7530.jpeg"
                       alt="Landscaping Detail"
                       fill
-                      className="object-cover"
+                      className="object-cover transition-transform duration-700 group-hover:scale-110"
                     />
+                    <div className="absolute inset-0 bg-dark-green/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
+                      <div className="w-12 h-12 bg-white/20 backdrop-blur-md rounded-full flex items-center justify-center border border-white/30 transform scale-90 group-hover:scale-100 transition-transform duration-500">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="w-6 h-6 text-white">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                        </svg>
+                      </div>
+                    </div>
                   </div>
                 </FadeIn>
                 <FadeIn direction="up" delay={300}>
@@ -31,13 +46,23 @@ export default function About() {
               </div>
               <div className="pt-12 space-y-4">
                 <FadeIn direction="left" delay={200}>
-                  <div className="relative h-80 rounded-[2rem] overflow-hidden shadow-2xl">
+                  <div 
+                    className="group relative h-80 rounded-[2rem] overflow-hidden shadow-2xl cursor-pointer border-2 border-transparent hover:border-primary-green transition-all duration-500"
+                    onClick={() => setSelectedImage("/team.jpeg")}
+                  >
                     <Image
                       src="/team.jpeg"
                       alt="Garden Design"
                       fill
-                      className="object-cover"
+                      className="object-cover transition-transform duration-700 group-hover:scale-110"
                     />
+                    <div className="absolute inset-0 bg-dark-green/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
+                      <div className="w-12 h-12 bg-white/20 backdrop-blur-md rounded-full flex items-center justify-center border border-white/30 transform scale-90 group-hover:scale-100 transition-transform duration-500">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="w-6 h-6 text-white">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                        </svg>
+                      </div>
+                    </div>
                   </div>
                 </FadeIn>
               </div>
@@ -100,19 +125,56 @@ export default function About() {
             </div>
             <div className="lg:col-span-7 order-1 lg:order-2">
                <FadeIn direction="left">
-                <div className="relative aspect-[16/9] rounded-[3rem] overflow-hidden shadow-2xl border-4 border-primary-green">
+                <div 
+                  className="group relative aspect-[16/9] rounded-[3rem] overflow-hidden shadow-2xl border-4 border-primary-green cursor-pointer"
+                  onClick={() => setSelectedImage("/IMG_0109.png")}
+                >
                         <Image
                             src="/IMG_0109.png"
                             alt="DGS Landscaping Toy Drive"
                             fill
-                            className="object-cover"
+                            className="object-cover transition-transform duration-700 group-hover:scale-105"
                         />
+                        <div className="absolute inset-0 bg-dark-green/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
+                          <div className="w-16 h-16 bg-white/20 backdrop-blur-md rounded-full flex items-center justify-center border border-white/30 transform scale-90 group-hover:scale-100 transition-transform duration-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="w-8 h-8 text-white">
+                              <path strokeLinecap="round" strokeLinejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                            </svg>
+                          </div>
+                        </div>
                 </div>
                </FadeIn>
             </div>
           </div>
         </div>
       </div>
+
+      {/* Full Screen Image Modal */}
+      {selectedImage && (
+        <div 
+          className="fixed inset-0 z-[100] bg-dark-green/95 backdrop-blur-2xl flex items-center justify-center p-4 md:p-12 animate-in fade-in duration-300"
+          onClick={() => setSelectedImage(null)}
+        >
+          <button 
+            className="absolute top-8 right-8 text-white/50 hover:text-white transition-colors p-4 z-[110]"
+            onClick={() => setSelectedImage(null)}
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="w-10 h-10">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+          
+          <div className="relative w-full h-full max-w-6xl max-h-[85vh] animate-in zoom-in-95 duration-500 ease-out">
+            <Image
+              src={selectedImage}
+              alt="Full View"
+              fill
+              className="object-contain"
+              priority
+            />
+          </div>
+        </div>
+      )}
     </section>
   );
 }
