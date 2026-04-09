@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="relative min-h-[95vh] flex items-center pt-20 overflow-hidden bg-cream">
+    <section className="relative min-h-[95vh] flex items-center pt-32 overflow-hidden bg-cream">
       {/* Unified Faded Background with Motion */}
       <div className="absolute inset-0 z-0">
         <Image

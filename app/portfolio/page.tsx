@@ -4,7 +4,7 @@ import FadeIn from "@/components/FadeIn";
 
 export default function PortfolioPage() {
   return (
-    <div className="pt-20">
+    <div className="pt-32">
       <div className="bg-dark-green py-24 text-cream">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <FadeIn direction="down">
