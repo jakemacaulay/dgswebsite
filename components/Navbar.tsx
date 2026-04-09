@@ -19,7 +19,6 @@ export default function Navbar() {
   }, []);
 
   const isHome = pathname === "/";
-  const showSolidNav = isScrolled || !isHome;
 
   const navLinks = [
     { name: "Services", href: "/services" },
@@ -27,6 +26,13 @@ export default function Navbar() {
     { name: "Portfolio", href: "/portfolio" },
     { name: "Contact", href: "/contact" },
   ];
+
+  const handleLogoClick = (e: React.MouseEvent) => {
+    if (isHome) {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  };
 
   return (
     <nav
@@ -42,7 +48,11 @@ export default function Navbar() {
               : "bg-transparent border border-transparent"
           }`}
         >
-          <Link href="/" className="flex items-center gap-3 group">
+          <Link 
+            href="/" 
+            className="flex items-center gap-3 group"
+            onClick={handleLogoClick}
+          >
             <div className="relative w-15 h-15 transition-transform duration-500 group-hover:scale-110">
               <Image
                 src="/IMG_0141.png"
