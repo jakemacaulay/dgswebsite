@@ -47,17 +47,17 @@ export default function Contact() {
             </p>
 
             <div className="space-y-12">
-              <div className="flex items-start gap-6">
-                <div className="text-accent-green font-black text-xs uppercase tracking-widest pt-2">Call</div>
-                <div>
-                  <a href="tel:9028805808" className="text-3xl font-black text-dark-green hover:text-primary-green transition-colors">(902) 880-5808</a>
+              <div className="space-y-2">
+                <div className="text-accent-green font-black text-xs uppercase tracking-widest">Call</div>
+                <div className="flex flex-col">
+                  <a href="tel:9028805808" className="text-2xl md:text-3xl font-black text-dark-green hover:text-primary-green transition-colors">(902) 880-5808</a>
                 </div>
               </div>
 
-              <div className="flex items-start gap-6">
-                <div className="text-accent-green font-black text-xs uppercase tracking-widest pt-2">Email</div>
-                <div className="min-w-0 flex-1">
-                  <a href="mailto:dgslandscaping902@gmail.com" className="text-xl sm:text-2xl md:text-3xl font-black text-dark-green hover:text-primary-green transition-colors underline decoration-primary-green/30 underline-offset-8 break-all sm:break-normal">dgslandscaping902@gmail.com</a>
+              <div className="space-y-2">
+                <div className="text-accent-green font-black text-xs uppercase tracking-widest">Email</div>
+                <div className="flex flex-col">
+                  <a href="mailto:dgslandscaping902@gmail.com" className="text-2xl md:text-3xl font-black text-dark-green hover:text-primary-green transition-colors underline decoration-primary-green/30 underline-offset-8 break-all sm:break-normal">dgslandscaping902@gmail.com</a>
                 </div>
               </div>
             </div>
