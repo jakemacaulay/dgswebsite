@@ -109,7 +109,6 @@ export default function Home() {
                     fill
                     className="object-cover rounded-[4rem]"
                   />
-                 <div className="absolute inset-0 bg-primary-green/20 mix-blend-overlay group-hover:bg-transparent transition-colors duration-500" />
               </div>
               {/* Floating Badge */}
               <div className="absolute -bottom-10 -left-10 bg-accent-green p-10 rounded-[2.5rem] shadow-2xl animate-bounce-slow">
