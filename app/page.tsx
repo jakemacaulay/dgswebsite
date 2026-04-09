@@ -90,7 +90,7 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
             <FadeIn direction="right">
               <span className="text-accent-green font-bold tracking-[0.2em] uppercase text-sm mb-6 block">Our Story</span>
-              <h2 className="text-5xl md:text-8xl font-black mb-8 leading-tight">Rooted in <br /><span className="text-primary-green">Passion</span></h2>
+              <h2 className="text-5xl md:text-8xl font-black mb-8 leading-tight">Driven by <br /><span className="text-primary-green">Detail</span></h2>
               <p className="text-2xl font-bold mb-12 leading-relaxed opacity-80 max-w-xl">
                 Founded in 2023, DGS Landscaping is locally owned and operated. We began with a simple idea: To bring your outdoor visions to life through artisan craftsmanship and unwavering dedication.
               </p>
