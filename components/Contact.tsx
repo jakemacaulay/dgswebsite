@@ -50,14 +50,14 @@ export default function Contact() {
               <div className="space-y-2">
                 <div className="text-accent-green font-black text-xs uppercase tracking-widest">Call</div>
                 <div className="flex flex-col">
-                  <a href="tel:9028805808" className="text-2xl md:text-3xl font-black text-dark-green hover:text-primary-green transition-colors">(902) 880-5808</a>
+                  <a href="tel:9028805808" className="text-lg sm:text-2xl md:text-3xl font-black text-dark-green hover:text-primary-green transition-colors">(902) 880-5808</a>
                 </div>
               </div>
 
               <div className="space-y-2">
                 <div className="text-accent-green font-black text-xs uppercase tracking-widest">Email</div>
                 <div className="flex flex-col">
-                  <a href="mailto:dgslandscaping902@gmail.com" className="text-2xl md:text-3xl font-black text-dark-green hover:text-primary-green transition-colors underline decoration-primary-green/30 underline-offset-8 break-all sm:break-normal">dgslandscaping902@gmail.com</a>
+                  <a href="mailto:dgslandscaping902@gmail.com" className="text-lg sm:text-2xl md:text-3xl font-black text-dark-green hover:text-primary-green transition-colors underline decoration-primary-green/30 underline-offset-8 whitespace-nowrap">dgslandscaping902@gmail.com</a>
                 </div>
               </div>
             </div>
