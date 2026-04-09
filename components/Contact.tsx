@@ -56,8 +56,8 @@ export default function Contact() {
 
               <div className="flex items-start gap-6">
                 <div className="text-accent-green font-black text-xs uppercase tracking-widest pt-2">Email</div>
-                <div>
-                  <a href="mailto:dgslandscaping902@gmail.com" className="text-3xl font-black text-dark-green hover:text-primary-green transition-colors underline decoration-primary-green/30 underline-offset-8">dgslandscaping902@gmail.com</a>
+                <div className="min-w-0 flex-1">
+                  <a href="mailto:dgslandscaping902@gmail.com" className="text-xl sm:text-2xl md:text-3xl font-black text-dark-green hover:text-primary-green transition-colors underline decoration-primary-green/30 underline-offset-8 break-all sm:break-normal">dgslandscaping902@gmail.com</a>
                 </div>
               </div>
             </div>
