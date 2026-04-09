@@ -123,7 +123,7 @@ export default function Home() {
       {/* Portfolio Preview Section */}
       <section className="py-32 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <FadeIn className="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
+          <FadeIn className="flex flex-col md:flex-row justify-between items-center md:items-end mb-20 gap-8 text-center md:text-left">
             <div className="max-w-2xl">
               <span className="text-accent-green font-bold tracking-[0.2em] uppercase text-sm mb-4 block">Portfolio</span>
               <h2 className="text-5xl md:text-7xl font-black text-dark-green mb-8 leading-tight">Featured <br /><span className="text-primary-green">Masterpieces</span></h2>
