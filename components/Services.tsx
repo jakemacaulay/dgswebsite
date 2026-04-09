@@ -52,8 +52,8 @@ export default function Services() {
           <FadeIn direction="right" className="max-w-2xl">
             <span className="text-accent-green font-bold tracking-[0.2em] uppercase text-sm mb-4 block">Our Expertise</span>
             <h2 className="text-5xl md:text-8xl font-black text-dark-green mb-8 leading-[0.9]">
-              The Full <br /> 
-              <span className="text-primary-green uppercase">Spectrum</span>
+              Range of <br /> 
+              <span className="text-primary-green uppercase">Services</span>
             </h2>
             <p className="text-xl md:text-2xl text-dark-green leading-relaxed font-medium opacity-70">
               From maintenance to major transformations, we offer comprehensive solutions for your outdoor needs.
